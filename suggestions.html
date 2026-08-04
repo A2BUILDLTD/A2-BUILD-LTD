@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suggestions · Z Fighters</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html">Z Fighters</a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="suggestions.html">Suggestions</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-section hero-small">
+        <div class="hero-copy">
+          <span class="eyebrow">Story Guidance</span>
+          <h1>Plan Your Dragon Ball Journey</h1>
+          <p>Choose the perfect saga, character spotlight, or power breakdown based on your interests. Submit a suggestion and we’ll help you explore the right story path.</p>
+          <a class="btn btn-primary" href="#suggestion-form">Submit Feedback</a>
+        </div>
+      </section>
+
+      <section class="suggestions-section">
+        <div class="section-header">
+          <span>Suggestion Categories</span>
+          <h2>What Would You Like to Explore?</h2>
+        </div>
+        <div class="suggestion-grid">
+          <article>
+            <h3>Best Character Arcs</h3>
+            <p>Want a deep dive into Goku, Vegeta, Gohan, or Piccolo? Request an arc breakdown with training, battles, and personal growth.</p>
+          </article>
+          <article>
+            <h3>Strongest Transformations</h3>
+            <p>Interested in Ultra Instinct, Super Saiyan Blue, or Perfect Cell? Learn how the universe’s strongest forms change the battle landscape.</p>
+          </article>
+          <article>
+            <h3>Saga-Based Guides</h3>
+            <p>Need a recommendation for Dragon Ball Z, Dragon Ball Super, or a specific tournament? Get a saga guide to help you watch in the best order.</p>
+          </article>
+          <article>
+            <h3>Villains and Threats</h3>
+            <p>Discover the greatest antagonists, their motives, and why they forced the Z Fighters to evolve.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="form-section" id="suggestion-form">
+        <div class="section-header">
+          <span>Share Your Idea</span>
+          <h2>Submit a Suggestion</h2>
+        </div>
+        <form class="card form-card" id="suggestionForm">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+          <label for="topic">Suggestion Topic</label>
+          <select id="topic" name="topic">
+            <option>Best character arc</option>
+            <option>Strongest form</option>
+            <option>Sa ga guide</option>
+            <option>Villain profile</option>
+          </select>
+
+          <label for="message">Your Idea</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us what you want to see next." required></textarea>
+
+          <button class="btn btn-primary" type="submit">Send Suggestion</button>
+          <p class="form-status" id="suggestionStatus"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Z Fighters Showcase · Your feedback helps the saga grow.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

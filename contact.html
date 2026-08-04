@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact · Z Fighters</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html">Z Fighters</a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="suggestions.html">Suggestions</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-section hero-small">
+        <div class="hero-copy">
+          <span class="eyebrow">Connect With Command</span>
+          <h1>Contact the Z Fighters Team</h1>
+          <p>Have a question about the world of Dragon Ball or want help crafting the perfect viewing experience? Reach out and we’ll respond with tailored guidance.</p>
+          <a class="btn btn-primary" href="#contact-form">Get in Touch</a>
+        </div>
+      </section>
+
+      <section class="form-section" id="contact-form">
+        <div class="section-header">
+          <span>Reach Out</span>
+          <h2>Send a Message</h2>
+        </div>
+        <form class="card form-card" id="contactForm">
+          <label for="contactName">Name</label>
+          <input type="text" id="contactName" name="contactName" placeholder="Your name" required />
+
+          <label for="contactEmail">Email</label>
+          <input type="email" id="contactEmail" name="contactEmail" placeholder="you@example.com" required />
+
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Topic or question" required />
+
+          <label for="contactMessage">Message</label>
+          <textarea id="contactMessage" name="contactMessage" rows="5" placeholder="What would you like to know?" required></textarea>
+
+          <button class="btn btn-primary" type="submit">Submit</button>
+          <p class="form-status" id="contactStatus"></p>
+        </form>
+
+        <div class="contact-card">
+          <h3>Looking for a Hero Recommendation?</h3>
+          <p>Ask about your favourite character, strongest forms, or the best saga to start with.</p>
+          <ul>
+            <li><strong>Favorite characters:</strong> Goku, Vegeta, Gohan, Piccolo, Krillin</li>
+            <li><strong>Strongest forms:</strong> Ultra Instinct, Super Saiyan Blue, Perfect Cell</li>
+            <li><strong>Best sagas:</strong> Saiyan saga, Frieza saga, Cell saga, Buu saga</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Z Fighters Showcase · Connect with a story guide.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="suggestions.html">Suggestions</a>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
