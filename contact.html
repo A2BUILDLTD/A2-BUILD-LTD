@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact · Z Fighters</title>
+  <title>Contact | A2 BUILD LTD</title>
+  <meta name="description" content="Contact A2 BUILD LTD for construction, refurbishment, and project enquiries." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -12,10 +13,14 @@
 <body>
   <div class="page-shell">
     <header class="site-header">
-      <a class="brand" href="index.html">Z Fighters</a>
+      <a class="brand" href="index.html" aria-label="A2 home">
+        <img src="assets/logo.svg" alt="A2 logo" class="brand-mark" />
+        <span>A2</span>
+      </a>
       <nav class="site-nav">
         <a href="index.html">Home</a>
-        <a href="suggestions.html">Suggestions</a>
+        <a href="about.html">About</a>
+        <a href="suggestions.html">Projects</a>
         <a href="contact.html">Contact</a>
       </nav>
     </header>
@@ -23,52 +28,59 @@
     <main>
       <section class="hero-section hero-small">
         <div class="hero-copy">
-          <span class="eyebrow">Connect With Command</span>
-          <h1>Contact the Z Fighters Team</h1>
-          <p>Have a question about the world of Dragon Ball or want help crafting the perfect viewing experience? Reach out and we’ll respond with tailored guidance.</p>
-          <a class="btn btn-primary" href="#contact-form">Get in Touch</a>
+          <span class="eyebrow">Request a quote</span>
+          <h1>Let’s build your next project.</h1>
+          <p>Whether you need a domestic extension, commercial fit-out, or a trusted construction partner for your next build, our team is ready to help.</p>
+          <a class="btn btn-primary" href="#contact-form">Book a Consultation</a>
         </div>
       </section>
 
       <section class="form-section" id="contact-form">
         <div class="section-header">
-          <span>Reach Out</span>
-          <h2>Send a Message</h2>
+          <span>Contact</span>
+          <h2>Send us a message</h2>
         </div>
         <form class="card form-card" id="contactForm">
-          <label for="contactName">Name</label>
+          <label for="contactName">Full name</label>
           <input type="text" id="contactName" name="contactName" placeholder="Your name" required />
 
-          <label for="contactEmail">Email</label>
+          <label for="contactEmail">Email address</label>
           <input type="email" id="contactEmail" name="contactEmail" placeholder="you@example.com" required />
 
-          <label for="subject">Subject</label>
-          <input type="text" id="subject" name="subject" placeholder="Topic or question" required />
+          <label for="subject">Project type</label>
+          <input type="text" id="subject" name="subject" placeholder="Commercial build, extension, refurbishment..." required />
 
-          <label for="contactMessage">Message</label>
-          <textarea id="contactMessage" name="contactMessage" rows="5" placeholder="What would you like to know?" required></textarea>
+          <label for="contactMessage">Project details</label>
+          <textarea id="contactMessage" name="contactMessage" rows="5" placeholder="Tell us about your project requirements" required></textarea>
 
-          <button class="btn btn-primary" type="submit">Submit</button>
+          <button class="btn btn-primary" type="submit">Submit enquiry</button>
           <p class="form-status" id="contactStatus"></p>
         </form>
 
-        <div class="contact-card">
-          <h3>Looking for a Hero Recommendation?</h3>
-          <p>Ask about your favourite character, strongest forms, or the best saga to start with.</p>
+        <div class="contact-card company-details-final">
+          <div class="section-header">
+            <span>Company details</span>
+            <h2>Our business profile</h2>
+          </div>
+          <p>We provide construction and property services across residential and commercial projects.</p>
           <ul>
-            <li><strong>Favorite characters:</strong> Goku, Vegeta, Gohan, Piccolo, Krillin</li>
-            <li><strong>Strongest forms:</strong> Ultra Instinct, Super Saiyan Blue, Perfect Cell</li>
-            <li><strong>Best sagas:</strong> Saiyan saga, Frieza saga, Cell saga, Buu saga</li>
+            <li><strong>Company:</strong> A2 BUILD LTD</li>
+            <li><strong>Officer:</strong> Ashala, Aravind</li>
+            <li><strong>Correspondence address:</strong> 102 Kingston Road, Ilford, England, IG1 1PD</li>
+            <li><strong>Company number:</strong> 17428237</li>
+            <li><strong>Nature of business:</strong> SIC 41201 / 41202</li>
+            <li><strong>Phone:</strong> 07551555938</li>
+            <li><strong>Email:</strong> a2construck@gmail.com</li>
           </ul>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>&copy; 2026 Z Fighters Showcase · Connect with a story guide.</p>
+      <p>&copy; 2026 A2 BUILD LTD · Delivering quality construction.</p>
       <div class="footer-links">
         <a href="index.html">Home</a>
-        <a href="suggestions.html">Suggestions</a>
+        <a href="suggestions.html">Projects</a>
       </div>
     </footer>
   </div>

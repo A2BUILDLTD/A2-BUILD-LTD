@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Suggestions · Z Fighters</title>
+  <title>Projects | A2 BUILD LTD</title>
+  <meta name="description" content="Recent construction projects completed by A2 BUILD LTD." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -12,10 +13,14 @@
 <body>
   <div class="page-shell">
     <header class="site-header">
-      <a class="brand" href="index.html">Z Fighters</a>
+      <a class="brand" href="index.html" aria-label="A2 home">
+        <img src="assets/logo.svg" alt="A2 logo" class="brand-mark" />
+        <span>A2</span>
+      </a>
       <nav class="site-nav">
         <a href="index.html">Home</a>
-        <a href="suggestions.html">Suggestions</a>
+        <a href="about.html">About</a>
+        <a href="suggestions.html">Projects</a>
         <a href="contact.html">Contact</a>
       </nav>
     </header>
@@ -23,69 +28,49 @@
     <main>
       <section class="hero-section hero-small">
         <div class="hero-copy">
-          <span class="eyebrow">Story Guidance</span>
-          <h1>Plan Your Dragon Ball Journey</h1>
-          <p>Choose the perfect saga, character spotlight, or power breakdown based on your interests. Submit a suggestion and we’ll help you explore the right story path.</p>
-          <a class="btn btn-primary" href="#suggestion-form">Submit Feedback</a>
+          <span class="eyebrow">Our work</span>
+          <h1>Construction projects built with precision.</h1>
+          <p>We create practical, high quality spaces for homes, businesses, and growing developments, delivering polished finishes and reliable build standards.</p>
+          <a class="btn btn-primary" href="contact.html">Discuss your project</a>
         </div>
       </section>
 
-      <section class="suggestions-section">
+      <section class="projects-section">
         <div class="section-header">
-          <span>Suggestion Categories</span>
-          <h2>What Would You Like to Explore?</h2>
+          <span>Featured projects</span>
+          <h2>Selected construction work</h2>
         </div>
-        <div class="suggestion-grid">
-          <article>
-            <h3>Best Character Arcs</h3>
-            <p>Want a deep dive into Goku, Vegeta, Gohan, or Piccolo? Request an arc breakdown with training, battles, and personal growth.</p>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-image" style="background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80');"></div>
+            <div class="project-body">
+              <span class="meta">Commercial</span>
+              <h3>Commercial Office Refurbishment</h3>
+              <p>Full build-out and interior transformation for a professional office environment with modern systems and finish quality.</p>
+            </div>
           </article>
-          <article>
-            <h3>Strongest Transformations</h3>
-            <p>Interested in Ultra Instinct, Super Saiyan Blue, or Perfect Cell? Learn how the universe’s strongest forms change the battle landscape.</p>
+          <article class="project-card">
+            <div class="project-image" style="background-image:url('https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=900&q=80');"></div>
+            <div class="project-body">
+              <span class="meta">Domestic</span>
+              <h3>Luxury Home Extension</h3>
+              <p>Expanded family living space with open-plan design, energy-conscious detailing, and elegant finishing.</p>
+            </div>
           </article>
-          <article>
-            <h3>Saga-Based Guides</h3>
-            <p>Need a recommendation for Dragon Ball Z, Dragon Ball Super, or a specific tournament? Get a saga guide to help you watch in the best order.</p>
-          </article>
-          <article>
-            <h3>Villains and Threats</h3>
-            <p>Discover the greatest antagonists, their motives, and why they forced the Z Fighters to evolve.</p>
+          <article class="project-card">
+            <div class="project-image" style="background-image:url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=900&q=80');"></div>
+            <div class="project-body">
+              <span class="meta">New Build</span>
+              <h3>Residential New Build</h3>
+              <p>Design-and-build execution for a high-quality home focused on function, durability, and premium presentation.</p>
+            </div>
           </article>
         </div>
-      </section>
-
-      <section class="form-section" id="suggestion-form">
-        <div class="section-header">
-          <span>Share Your Idea</span>
-          <h2>Submit a Suggestion</h2>
-        </div>
-        <form class="card form-card" id="suggestionForm">
-          <label for="name">Your Name</label>
-          <input type="text" id="name" name="name" placeholder="Enter your name" required />
-
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="you@example.com" required />
-
-          <label for="topic">Suggestion Topic</label>
-          <select id="topic" name="topic">
-            <option>Best character arc</option>
-            <option>Strongest form</option>
-            <option>Sa ga guide</option>
-            <option>Villain profile</option>
-          </select>
-
-          <label for="message">Your Idea</label>
-          <textarea id="message" name="message" rows="5" placeholder="Tell us what you want to see next." required></textarea>
-
-          <button class="btn btn-primary" type="submit">Send Suggestion</button>
-          <p class="form-status" id="suggestionStatus"></p>
-        </form>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>&copy; 2026 Z Fighters Showcase · Your feedback helps the saga grow.</p>
+      <p>&copy; 2026 A2 BUILD LTD · Service quality from concept to completion.</p>
       <div class="footer-links">
         <a href="index.html">Home</a>
         <a href="contact.html">Contact</a>

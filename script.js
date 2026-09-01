@@ -1,15 +1,15 @@
-const orbScene = document.getElementById('orbScene');
+const heroCard = document.getElementById('heroCard');
 
-if (orbScene) {
-  orbScene.addEventListener('mousemove', (event) => {
-    const rect = orbScene.getBoundingClientRect();
-    const x = ((event.clientX - rect.left) / rect.width - 0.5) * 24;
-    const y = ((event.clientY - rect.top) / rect.height - 0.5) * -24;
-    orbScene.style.transform = `rotateX(${y}deg) rotateY(${x}deg)`;
+if (heroCard) {
+  heroCard.addEventListener('mousemove', (event) => {
+    const rect = heroCard.getBoundingClientRect();
+    const x = ((event.clientX - rect.left) / rect.width - 0.5) * 18;
+    const y = ((event.clientY - rect.top) / rect.height - 0.5) * -18;
+    heroCard.style.transform = `rotateX(${y}deg) rotateY(${x}deg) translateY(-4px)`;
   });
 
-  orbScene.addEventListener('mouseleave', () => {
-    orbScene.style.transform = 'rotateX(0deg) rotateY(0deg)';
+  heroCard.addEventListener('mouseleave', () => {
+    heroCard.style.transform = 'rotateX(0deg) rotateY(0deg) translateY(0)';
   });
 }
 
@@ -26,9 +26,9 @@ function handleFormSubmission(form, statusId, message) {
 }
 
 if (suggestionForm) {
-  handleFormSubmission(suggestionForm, 'suggestionStatus', 'Thanks! Your suggestion has been recorded.');
+  handleFormSubmission(suggestionForm, 'suggestionStatus', 'Thanks! Your enquiry has been received.');
 }
 
 if (contactForm) {
-  handleFormSubmission(contactForm, 'contactStatus', 'Message sent. We will reach out with a Dragon Ball strategy soon.');
+  handleFormSubmission(contactForm, 'contactStatus', 'Thank you. Our team will respond to your enquiry shortly.');
 }
